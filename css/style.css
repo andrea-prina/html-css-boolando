@@ -29,11 +29,10 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 99;
     display: flex;
     justify-content: center;
-    
-    /* TODO Mettere come ombra */
-    margin-bottom: 10px solid grey;
+    box-shadow: 0 0 10px 0;
 }
 
 .top-bar > .container {
@@ -88,9 +87,71 @@ main > .container {
     background-color: purple;
     border: 1px solid black;
     width: calc(100% / 3 - 10px);
-    height: 400px;
     margin: 20px 5px 5px 5px;
+    position: relative;
+    top: 0px;
 }
+
+.p-images {
+    position: relative;
+    top: 0;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+
+}
+
+.hover-img {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.product-card:hover .hover-img{
+    display: none;
+}
+
+
+.like-heart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    z-index: 2;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+
+}
+
+.like-heart:hover{
+    color: red;
+}
+
+.labels {
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    z-index: 2;
+    display: flex;
+    color: white;
+}
+
+.discount {
+    background-color: red;
+    margin-left: 5px;
+}
+
+.tag-1 {
+    background-color: green;
+    margin-left: 5px;
+}
+
 
 
 /* FOOTER */
