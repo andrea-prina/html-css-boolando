@@ -15,13 +15,19 @@
 
 }
 
-/* HEADER */
-
-/* TODO da rimuovere */
-.container div {
-    border: 1px dashed black;
+.nav-icons {
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
+
+.nav-icons > span {
+    margin-left: 5px;
+}
+
+
+/* HEADER */
 
 .top-bar {
     background-color: #FF6900;
@@ -64,12 +70,8 @@
     width: 100px;
 }
 
-.nav-icons {
+.top-bar .nav-icons{
     width: 25%;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-
 }
 
 /* MAIN */
@@ -84,8 +86,6 @@ main > .container {
 }
 
 .product-card {
-    background-color: purple;
-    border: 1px solid black;
     width: calc(100% / 3 - 10px);
     margin: 20px 5px 5px 5px;
     position: relative;
